@@ -126,7 +126,7 @@ public class DepartmentFormController implements Initializable {
 			throw new IllegalStateException("Entity was null");
 		}
 		txtId.setText(String.valueOf(entity.getId()));
-		txtName.setText(entity.getName());
+		txtName.setText(String.valueOf(entity.getName()));
 	}
 	
 	private void setErrorMessages(Map<String, String> errors) {
