@@ -16,7 +16,7 @@ public class DepartmentService {
 	}
 	
 	public void saveOrUpdate(Department obj) {
-		if(obj.getId() == null) {
+		if(obj.getId() == 0) {
 			dao.insert(obj);
 		}
 		else {

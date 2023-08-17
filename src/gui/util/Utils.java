@@ -24,6 +24,14 @@ public class Utils {
 		try {
 			return Integer.parseInt(str);
 		} catch (NumberFormatException e) {
+			return 0;
+		}
+	}
+
+	public static Double tryParseToDouble(String str) {
+		try {
+			return Double.parseDouble(str);
+		} catch (NumberFormatException e) {
 			return null;
 		}
 	}
